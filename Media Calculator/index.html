@@ -1,0 +1,77 @@
+<!--
+Module Name: Culture Media Quantification Engine
+Purpose: Automated calculation of microbiological media composition
+--><!DOCTYPE html>
+<html>
+<head>
+<title>Media Calculator</title>
+<style>
+body{font-family:Arial;background:#eef;padding:20px}
+.box{background:white;padding:20px;border-radius:8px;max-width:600px;margin:auto}
+select,input,button{width:100%;padding:8px;margin:6px 0}
+pre{background:#f4f4f4;padding:10px}
+button{background:#00796b;color:white;border:none}
+.footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:14px;
+  color:#555;
+  padding:10px;
+  border-top:1px solid #ccc;
+}
+</style>
+</head>
+ <body>
+<div class="logo">
+_Shree_The_Programmer<br>
+  </div>
+<div class="box">
+<h2>🧫 Media Composition Calculator</h2>
+<select id="mediaSelect" onchange="showComposition()">
+  <option value="">-- Select Media --</option>
+</select>
+
+<input type="number" id="finalVolume" placeholder="Final volume (ml)">
+
+<button onclick="calculateMedia()">Calculate</button>
+
+<pre id="output"></pre>
+
+</div>
+<hr>
+<h3>Universal Lab Conversion Calculator</h3>
+
+<input type="number" id="value" placeholder="Enter value">
+
+<select id="fromUnit">
+  <option value="L">Liter (L)</option>
+  <option value="mL">Milliliter (mL)</option>
+  <option value="uL">Microliter (µL)</option>
+  <option value="g">Gram (g)</option>
+  <option value="mg">Milligram (mg)</option>
+  <option value="ug">Microgram (µg)</option>
+</select>
+
+<select id="toUnit">
+  <option value="L">Liter (L)</option>
+  <option value="mL">Milliliter (mL)</option>
+  <option value="uL">Microliter (µL)</option>
+  <option value="g">Gram (g)</option>
+  <option value="mg">Milligram (mg)</option>
+  <option value="ug">Microgram (µg)</option>
+</select>
+
+<button onclick="convert()">CONVERT</button>
+
+<div id="convertResult"></div>
+<!-- Shared media database -->
+<script src="../shared/media_database.js"></script>
+
+<!-- Module logic -->
+<script src="script.js"></script>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

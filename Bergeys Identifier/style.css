@@ -1,0 +1,101 @@
+ /* BODY & CONTAINER */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #f1f8e9);
+    padding: 30px;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #00695c;
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #004d40;
+}
+
+/* CARD STYLE */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+h2 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+/* LABELS & SELECTS */
+label {
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    margin-top: 8px;
+}
+
+select {
+    padding: 5px;
+    width: 160px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* BUTTON */
+button {
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #004d40;
+    transform: scale(1.05);
+}
+
+/* RESULT BOX */
+#result {
+    background: #f9fbe7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+}
+/* ⚠️ Warning style */
+.result-card p.warning {
+  color: orange;
+  font-weight: bold;
+}
+/* HORIZONTAL RULE */
+hr {
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
