@@ -1,0 +1,62 @@
+<!--
+Module Name: Media Recommendation Engine
+Purpose: Intelligent selection of culture media
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Media Recommendation Tool</title>
+<style>
+body{
+  font-family:Arial;
+  background:#eef;
+  padding:20px;
+}
+.box{
+  background:white;
+  padding:20px;
+  max-width:600px;
+  margin:auto;
+  border-radius:8px;
+}
+select{
+  width:100%;
+  padding:8px;
+  margin:10px 0;
+}
+pre{
+  background:#f4f4f4;
+  padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>🧬 Media Recommendation Tool</h2>
+
+<select id="organismSelect" onchange="showMedia()">
+  <option value="">-- Select Organism --</option>
+</select>
+
+<pre id="output"></pre>
+
+<p style="text-align:center;font-size:13px;color:#555">
+Versatile Personality &copy; 2026
+</p>
+</div>
+<!-- Shared media database -->
+<script src="../shared/media_database.js"></script>
+
+<!-- Module-specific logic -->
+<script src="data.js"></script>
+<!-- Module logic -->
+<script src="Script.js"></script>
+
+
+<script src="data1.js"></script>
+<script src="script1.js"></script>
+
+</body>
+</html>
